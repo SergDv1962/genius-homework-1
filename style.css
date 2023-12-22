@@ -1,0 +1,37 @@
+:root {
+  --color-primary-blue-light: #2b7fff; /*--beauty-landing-22*/
+  --color-primary-blue-dark: #011C44; /*--beauty-landing-2-c-1*/
+  --color-primary-white: #ffffff; /*--beauty-landing-2-background*/
+  --color-secondary-grey-dark: #4A4A4A;
+  --color-secondary-grey-light: #747272;
+  --color-secondary-blue: #011F4A;
+  --color-secondary-yellow: #FFD02B;
+}
+
+ul {
+  list-style-type: none;
+}
+.link {
+  color: var(--color-primary-blue-dark);
+}
+.link:hover {
+  color: var(--color-primary-blue-light); 
+}
+.hero-title {
+  color: var(--color-primary-blue-light);
+}
+.button {
+  padding: 16px 32px;
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-blue-light);
+  background: var(--color-primary-blue-light, var(--color-primary-blue-light));
+  color: var(--color-primary-white);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--color-primary-blue-dark);
+  background: transparent;
+}
