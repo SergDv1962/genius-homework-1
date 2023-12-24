@@ -1,37 +1,279 @@
-:root {
-  --color-primary-blue-light: #2b7fff; /*--beauty-landing-22*/
-  --color-primary-blue-dark: #011C44; /*--beauty-landing-2-c-1*/
-  --color-primary-white: #ffffff; /*--beauty-landing-2-background*/
-  --color-secondary-grey-dark: #4A4A4A;
-  --color-secondary-grey-light: #747272;
-  --color-secondary-blue: #011F4A;
-  --color-secondary-yellow: #FFD02B;
+/* Roboto fonts*/
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+/* Play fonts*/
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
 }
 
+:root {
+  --color-primary-blue-light: #2b7fff; /*--beauty-landing-22*/
+  --color-primary-blue-dark: #011c44; /*--beauty-landing-2-c-1*/
+  --color-primary-white: #ffffff; /*--beauty-landing-2-background*/
+  --color-primary-black: #000000;
+  --color-secondary-grey-dark: #4a4a4a; /*--beauty-landing-2-c3*/
+  --color-secondary-grey-light: #747272; /*--beauty-landing-2-5*/
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-primary-blue-dark);
+}
 ul {
   list-style-type: none;
 }
-.link {
-  color: var(--color-primary-blue-dark);
-}
-.link:hover {
-  color: var(--color-primary-blue-light); 
-}
-.hero-title {
-  color: var(--color-primary-blue-light);
+a {
+  text-decoration: none;
 }
 .button {
   padding: 16px 32px;
   border-radius: 32px;
   border: 2px solid var(--color-primary-blue-light);
-  background: var(--color-primary-blue-light, var(--color-primary-blue-light));
+  background: var(--color-primary-blue-light);
   color: var(--color-primary-white);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
-.button:hover {
+.button:focus {
   color: var(--color-primary-blue-dark);
   background: transparent;
+}
+.title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+}
+.title span {
+  color: var(--color-primary-blue-light);
+}
+/* Header */
+.header {
+}
+.header__conteiner {
+}
+.header__nav {
+}
+.nav-header {
+}
+.nav-header__logo {
+}
+.nav-header__list {
+}
+.nav-header__item {
+}
+.nav-header__link {
+  font-size: 18px;
+  color: var(--color-primary-blue-dark);
+}
+.nav-header__link:hover {
+  color: var(--color-primary-blue-light);
+  font-weight: 700;
+}
+.header__social {
+}
+.social-header {
+}
+.social-header__item {
+}
+.social-header__icon {
+}
+
+/* Main */
+/* --- hero section */
+.hero {
+}
+.hero__title {
+  font-size: 18px;
+}
+.hero__title-logo {
+  color: var(--color-primary-blue-light);
+  font-family: "Play";
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.82;
+  text-transform: capitalize;
+}
+.hero__button {
+}
+.hero__text {
+  color: var(--color-secondary-grey-dark);
+  font-size: 12px;
+}
+
+/* --- about section */
+.about {
+}
+.about__title {
+}
+.about__title span {
+  text-transform: capitalize;
+}
+.about__text {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.about__text span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* --- why us section */
+.why-us {
+}
+.why-us__title {
+}
+.why-us__list {
+}
+.why-us__item {
+}
+.item-why {
+}
+.why-us__article {
+}
+.article-why {
+}
+.article-why__text {
+  color: var(--color-primary-black);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.333;
+}
+
+/* --- procedures section */
+.procedures {
+}
+.procedures__title {
+}
+.procedures__list {
+}
+.procedures__item {
+}
+.procedures__article {
+}
+.article-procedures {
+}
+.article-procedures__title {
+  color: var(--color-primary-white);
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+/* --- contacts section */
+.contacts {
+}
+.contacts__title {
+}
+.form-contacts {
+  background-color: var(--color-primary-blue-dark);
+}
+.form-contacts__title {
+  color: var(--color-primary-white);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.form-contacts__title span {
+  color: var(--color-primary-blue-light);
+}
+.form-contacts__input {
+  border-radius: 32px;
+  border: 2px solid var(--color-secondary-grey-light);
+  background-color: transparent;
+  color: var(--color-primary-white);
+  font-size: 13px;
+}
+
+.form-contacts__input::placeholder {
+  color: var(--color-primary-white);
+}
+.form-contacts__input:focus {
+  background-color: var(--color-secondary-grey-light);
+}
+.form-contacts__button {
+}
+.form-contacts__button:focus {
+  background-color: var(--color-primary-white);
+}
+.form-contacts__text {
+}
+
+/* Footer */
+.footer {
+}
+.footer__container {
+  background-color: var(--color-primary-blue-dark);
+}
+.footer__logo {
+}
+.footer__nav {
+}
+.nav-footer {
+}
+.nav-footer__list {
+}
+.nav-footer__item {
+}
+.nav-footer__link {
+  color: var(--color-primary-white);
+}
+.nav-footer__link:hover {
+  color: var(--color-primary-blue-light);
+}
+.footer__address {
+}
+.address-footer {
+}
+.address-footer__list {
+}
+.address-footer__item {
+}
+.address-footer__item a {
+  color: var(--color-primary-white);
+}
+.address-footer__item a:hover {
+  color: var(--color-primary-blue-light);
+}
+.address-footer__box {
+}
+.box-footer {
+}
+.box-footer__item {
+}
+.footer__politic {
+}
+.footer__politic_lable {
+}
+.footer__politic_lable a {
+  color: var(--color-primary-white);
+}
+.footer__politic_lable a:hover {
+  color: var(--color-primary-blue-light);
+}
+.footer__politic_copyright {
+  font-size: 13px;
+  color: var(--color-secondary-grey-light);
 }
