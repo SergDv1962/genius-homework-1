@@ -247,6 +247,7 @@ a {
 }
 .why-us__list {
   display: flex;
+  gap: 56px;
   flex-wrap: wrap;
 }
 .why-us__item {
@@ -317,18 +318,12 @@ a {
 }
 .procedures__item {
 }
-.procedures__card {
+.procedures__card { 
 }
 .procedures__card img {
   display: block;
-  border-radius: 120px 4px;
+  border-radius: 4px 120px;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 28, 68, 0) 48.53%,
-    rgba(1, 28, 68, 0.73) 84.61%,
-    #011c44 101.39%
-  );
 }
 .article-procedures {
 }
@@ -338,7 +333,6 @@ a {
   font-size: 22px;
   line-height: 1.18;
 }
-
 /* --- contacts section */
 .contacts {
 }
