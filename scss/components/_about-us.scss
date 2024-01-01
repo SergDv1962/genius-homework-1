@@ -1,0 +1,117 @@
+.about {
+   padding-top: 96px;
+ }
+ .about__container {
+   padding-bottom: 80px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .about__content {
+   flex-basis: 57%;
+   padding-top: 40px;
+   display: block;
+ }
+ .about__title {
+   font-family: "Play", sans-serif;
+   max-width: 529px;
+   text-align: left;
+   margin-bottom: 40px;
+ }
+ .about__title span {
+   text-transform: capitalize;
+ }
+ .about__text {
+   display: block;
+   max-width: 709px;
+   font-size: 22px;
+   line-height: 1.73;
+ }
+ .about__text span {
+   font-weight: 600;
+   text-transform: capitalize;
+ }
+ .about__text p:not(:last-child) {
+   margin-bottom: 40px;
+ }
+ .about__images {
+   position: relative;
+   flex-basis: 40.1%;
+ }
+ .image-first {
+   margin-bottom: 40px;
+ }
+ .image-second {
+   transform: translateX(168px);
+ }
+ .image-first img,
+ .image-second img {
+   border-radius: 50%;
+ }
+ .image-second img {
+   display: block;
+   justify-self: end;
+ }
+ .first-star {
+   position: absolute;
+   top: 324px;
+   left: 121px;
+   animation: first-star 1s ease 0.4s infinite;
+   fill: var(--color-primary-blue-dark);
+ }
+ @keyframes first-star {
+   0% {
+     transform: scale(1) rotate(0deg);
+     fill: var(--color-secondary-blue);
+   }
+   20% {
+     transform: scale(1.2) rotate(180deg);
+     fill: var(--color-primary-blue-light);
+   }
+   100% {
+     transform: scale(0.7) rotate(360deg);
+     fill: var(--color-primary-white);
+   }
+ }
+ .second-star {
+   position: absolute;
+   top: 60px;
+   right: -20px;
+   animation: second-star 2s ease-in-out 0.1s infinite;
+   fill: var(--color-primary-blue-dark);
+ }
+ @keyframes second-star {
+   0% {
+     transform: scale(1) translate(0) rotate(0deg);
+   }
+   20% {
+     transform: scale(0.5) translate(-40px, 260px) rotate(-180deg);
+     fill: var(--color-primary-blue-light);
+   }
+   80% {
+     transform: scale(2) translate(-60px) rotate(360deg);
+     fill: var(--color-secondary-yellow);
+   }
+   100% {
+     transform: scale(1) translate(0) rotate(-360deg);
+   }
+ }
+ .third-star {
+   position: absolute;
+   top: 270px;
+   right: 8px;
+   animation: third-star 3s ease-in 0s infinite;
+   fill: var(--color-secondary-yellow);
+ }
+ @keyframes third-star {
+   0% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(5) translateX(-4px);
+     fill: var(--color-primary-blue-light);
+   }
+   100% {
+     transform: scale(0.2);
+     fill: var(--color-secondary-yellow);
+   }
+ }

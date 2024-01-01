@@ -1,0 +1,89 @@
+.procedures {
+   padding-top: 96px;
+ }
+ .procedures__container {
+   padding-bottom: 44px;
+ }
+ .procedures__title {
+ }
+ /* ---  --- carousel */
+ .procedures__carousel {
+   max-width: 1216px;
+   margin: 0 12px;
+   display: flex;
+   justify-content: space-between;
+   gap: 32px;
+   align-items: center;
+ }
+ .carousel-button {
+   flex-shrink: 0;
+   width: 44px;
+   height: 44px;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   border: 1px solid var(--color-primary-blue-dark);
+   background: transparent;
+   fill: var(--color-primary-blue-dark);
+   cursor: pointer;
+ }
+ .carousel-button:hover {
+   border-color: var(--color-primary-white);
+   background: var(--color-primary-blue-light);
+   fill: var(--color-primary-white);
+ }
+ .carousel-button.next {
+   transform: rotate(180deg);
+ }
+ .procedures__list {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+ }
+ .procedures__item {
+   flex-basis: calc((100% - 32px) / 3);
+ }
+ .procedures__card {
+   position: relative;
+ 
+   transition: transform 0.2s;
+ }
+ .procedures__card:hover {
+   transform: scale(1.05);
+ }
+ .procedures__card img {
+   width: 100%;
+   border-radius: 4px 120px;
+ }
+ .procedures-card__shadow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 4px 120px;
+   background-image: linear-gradient(
+     180deg,
+     rgba(1, 28, 68, 0) 48.53%,
+     rgba(1, 28, 68, 0.73) 84.61%,
+     #011c44 101.39%
+   );
+ }
+ .card-procedures__title {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: 2;
+   width: 152px;
+   height: 52px;
+   color: var(--color-primary-white);
+   text-align: center;
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 1.18;
+   margin-right: 77px;
+   margin-bottom: 32px;
+ }
