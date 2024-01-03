@@ -1,0 +1,40 @@
+.card-procedures {
+   position: relative;
+   transition: transform 0.2s;
+   &:hover {
+      transform: scale(1.05);
+   }
+   &__img {
+      width: 100%;
+      border-radius: 4px 120px;
+   }
+   &__shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px 120px;
+      background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+      );
+   }
+   &__title {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      width: 152px;
+      height: 52px;
+      color: var(--color-primary-white);
+      text-align: center;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.18;
+      margin-right: 77px;
+      margin-bottom: 32px;
+   }   
+ }

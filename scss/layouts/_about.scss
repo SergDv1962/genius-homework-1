@@ -1,0 +1,108 @@
+.about {
+  padding-top: 96px;
+  &__container {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    flex-basis: 57%;
+    padding-top: 40px;
+    display: block;
+  }
+  &__title {
+    max-width: 529px;
+    margin-bottom: 40px;
+  }
+  &__block-txt {
+    display: block;
+    max-width: 709px;
+    font-size: 22px;
+    line-height: 1.73;
+  }
+  &__text:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &__images {
+    position: relative;
+    flex-basis: 40.1%;
+  }
+  &__box-first {
+    margin-bottom: 40px;
+  }
+  &__box-second {
+    transform: translateX(168px);
+  }
+  &__image {
+    display: block;
+    border-radius: 50%;
+    width: 67.3%;
+    &--right {
+      justify-self: end;
+    }
+  }
+  &__first-star {
+    position: absolute;
+    top: 324px;
+    left: 121px;
+    animation: first-star 1s ease 0.4s infinite;
+    fill: var(--color-primary-blue-dark);
+  }
+  @keyframes first-star {
+    0% {
+      transform: scale(1) rotate(0deg);
+      fill: var(--color-secondary-blue);
+    }
+    20% {
+      transform: scale(1.2) rotate(180deg);
+      fill: var(--color-primary-blue-light);
+    }
+    100% {
+      transform: scale(0.7) rotate(360deg);
+      fill: var(--color-primary-white);
+    }
+  }
+  &__second-star {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    animation: second-star 2s ease-in-out 0.1s infinite;
+    fill: var(--color-primary-blue-dark);
+  }
+  @keyframes second-star {
+    0% {
+      transform: scale(1) translate(0) rotate(0deg);
+    }
+    20% {
+      transform: scale(0.5) translate(-40px, 260px) rotate(-180deg);
+      fill: var(--color-primary-blue-light);
+    }
+    80% {
+      transform: scale(2) translate(-60px) rotate(360deg);
+      fill: var(--color-secondary-yellow);
+    }
+    100% {
+      transform: scale(1) translate(0) rotate(-360deg);
+    }
+  }
+  &__third-star {
+    position: absolute;
+    top: 270px;
+    right: 8px;
+    animation: third-star 3s ease-in 0s infinite;
+    fill: var(--color-secondary-yellow);
+  }
+  @keyframes third-star {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(5) translateX(-4px);
+      fill: var(--color-primary-blue-light);
+    }
+    100% {
+      transform: scale(0.2);
+      fill: var(--color-secondary-yellow);
+    }
+  }
+}

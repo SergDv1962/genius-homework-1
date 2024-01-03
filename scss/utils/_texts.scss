@@ -1,0 +1,9 @@
+.text-brand {
+  color: var(--color-primary-blue-light);
+}
+.text-capitalize {
+  text-transform: capitalize;
+  &--bold {
+    font-weight: 600;
+  }
+}

@@ -1,26 +1,33 @@
 @import "./utils/fonts";
 
 @import "./utils/variables";
+@import "./utils/texts";
 
 @import "./base";
 
 @import './utils/utils';
 
 @import './components/button';
+@import './components/input';
+@import './components/_form-terms';
+@import './components/card-why';
+@import './components/carousel-button';
+@import './components/card-procedures';
 /* Header */
-@import './components/header';
+@import './layouts/header';
 /* Main */
 /* --- hero section */
-@import './components/hero-section';
+@import './layouts/hero-section';
 /* --- about section */
-@import './components/about-us';
+@import './layouts/about';
 /* --- why us section */
-@import './components/why-us';
+@import './layouts/why-us';
 /* --- procedures section */
-@import './components/procedures-section';
+@import './layouts/procedures';
 /* --- contacts section */
-@import './components/contacts-section';
+@import './layouts/contacts';
+
 /* Footer */
-@import './components/footer';
+@import './layouts/footer';
 /* ---- modal------ */
-@import './components/modal-window'
+@import './layouts/modal-window'

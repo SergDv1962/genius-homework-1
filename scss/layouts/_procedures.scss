@@ -1,0 +1,28 @@
+.procedures {
+  padding-top: 96px;
+
+  &__container {
+    padding-bottom: 44px;
+  }
+  &__carousel {
+    max-width: 1216px;
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  &__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
+
+
+
+
